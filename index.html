@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Libary</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+     <h1 class="title">Libary</h1>
+     <h2 class="add-title">Add Book</h2>
+
+     <form action="#" id="form">
+          <div class="add-container">
+               <div class="name-input info">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" required>
+               </div>
+               <div class="author-input info">
+                    <label for="author">Author</label>
+                    <input id="author" type="text" required>
+               </div>
+               <div class="status-input info">
+                    <label for=dropdown">Status</label>
+                    <select name="dropdown" id="dropdown" required>
+                         <option value="Not read" selected>Not Read</option>
+                         <option value="Read">Read</option>
+                    </select>
+               </div>
+          </div>
+          <button id="btn" type="submit">Submit</button>
+     </form>
+
+
+
+     <table class="table-container">
+          <thead class="table-heading">
+               <tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Status</th>
+                    <th></th>
+               </tr>
+          </thead>
+
+          <tbody id="shelf" class="book-table">
+               <!-- book go here -->
+               <!-- 
+          <tr>
+               <td>${book.name}</td>
+               <td> ${book.author}</td>
+               <td><button class="status-btn">${book.status}</button></td>
+               <td><button id="remove-btn" class="remove-btns>Remove</button></td>
+          </tr>
+                -->
+          </tbody>
+     </table>
+
+     <script src="/app.js"></script>
+</body>
+
+</html>

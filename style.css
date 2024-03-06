@@ -1,0 +1,142 @@
+* {
+     padding: 0;
+     margin: 0;
+     font-family: "Poppins", sans-serif;
+     box-sizing: border-box;
+}
+
+body {
+     min-height: 100vh;
+     background-color: rgb(255, 250, 244);
+}
+
+.title,
+.add-title,
+form,
+.list-container,
+table {
+     margin: 0 max(10%, 50px);
+}
+
+.info input,
+.info select {
+     display: block;
+}
+
+button, select{
+     cursor: pointer;
+}
+
+/* ------------------ */
+
+.title {
+     font-size: 35px;
+     margin-top: 60px;
+     margin-bottom: 30px;
+     border-bottom: 2px solid rgb(0, 0, 0);
+     min-width: 300px;
+}
+
+.add-title{
+     font-size: 25px;
+     margin-bottom: 15px;
+}
+
+/* ------------------ */
+
+.add-container {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     gap: 10px 20px;
+     margin-bottom: 15px;
+}
+
+.info {
+     outline: none;
+}
+
+.info input {
+     width: 90%;
+}
+
+#btn{
+     padding: 5px 10px;
+     font-size: 14px;
+     background-color: #06a70e;
+     border: none;
+     border-radius: 5px;
+}
+
+#btn:hover{
+     background-color: rgb(40, 188, 48);
+     scale: .99;
+}
+
+@media (max-width: 800px){
+     .add-container{
+          grid-template-columns: minmax(300px, 1fr)
+     }
+}
+
+/* ------------------ */
+ 
+
+.table-container{
+     margin-top: 30px;
+     /* removes the gap between columns*/
+     border-collapse: collapse; 
+     font-size: 15px;
+     min-width: 300px;
+     max-width: 900px;
+} 
+
+.table-heading{
+     box-shadow: 0px 7px 28px 0px rgba(0,0,0,0.30);
+     background-color: #ffff;
+}
+
+.table-container thead th{
+     text-align: left;
+}
+
+.table-container th,
+.table-container td{
+     padding: 5px 10px;
+}
+
+.book-table tr{
+     font-weight: 300;
+     font-size: 15px;
+     border-bottom: 2px solid #bfbebedd;
+}
+
+.status-btn{
+     padding: 3px 7px;
+     font-size: 12px;
+     font-weight: 300;
+     background-color: #bfbebedd;
+     border: none;
+     border-radius: 5px;
+}
+
+.status-btn:hover{
+     background-color: #dddd;
+}
+
+.remove-btns{
+     padding: 3px 7px;
+     font-size: 12px;
+     font-weight: 300;
+     background-color: rgb(240, 97, 97);
+     border: none;
+     border-radius: 5px;
+}
+
+.remove-btns:hover{
+     background-color: #ff7878;
+}
+
+
+ 
+
+
